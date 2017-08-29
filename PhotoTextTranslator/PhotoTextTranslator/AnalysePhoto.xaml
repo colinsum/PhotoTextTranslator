@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhotoTextTranslator.AnalysePhoto">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Button x:Name="languages" Text="Select language"  Margin="20" Clicked="languages_Clicked"/>
+                <Label x:Name="selected" Margin="20,0,0,0"/>
+                <Button x:Name="translateButton" Text="Tanslate Text" Margin="20" Clicked="translateButton_Clicked" />
+                <Label Text="Original" HorizontalTextAlignment="Center" />
+                <Label x:Name="picSentence" HorizontalTextAlignment="Center" />
+                <Label Text="Translation" HorizontalTextAlignment="Center" />
+                <Label x:Name="translation" HorizontalTextAlignment="Center" />
+            </StackLayout>
+        </ScrollView>        
+    </ContentPage.Content>
+</ContentPage>
